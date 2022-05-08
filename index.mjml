@@ -127,7 +127,7 @@
                     Automation
                 </mj-text>
                 <mj-text mj-class="p-1">
-                    I am a power user and I code most of my time in scripting languages that help automate tasks on computer system. I have a preference for PowerShell Core that is cross platform, but I have no trouble exiting the vim in bash terminal. I use Linux as Windows Subsystem. Brief, PowerShell Remoting and SSH has no secret to me. 
+                    I am a power user, and I code most of my time in scripting languages that help automate tasks on a computer system. I have a preference for PowerShell Core which is cross-platform, but I have no trouble exiting the vim in the bash terminal. I use Linux as Windows Subsystem. Brief, PowerShell Remoting, and SSH have no secrets to me. 
                 </mj-text>
             </mj-column>
             <mj-column>
@@ -145,7 +145,7 @@
                     Front-End Developer
                 </mj-text>
                 <mj-text mj-class="p-1">
-                    I am an artist who does not know how to draw and with my knowledge of backend tools (Fiddler and DevTools) help me reverse engineer websites to get inspiration. If a client wants its website to look better than a competitor, I can do it easily. I know HTML5, CSS and Javascript to well for somebody to try to keep its design away from my sight.
+                    I am an artist who does not know how to draw, and my knowledge of troubleshooting tools (Fiddler and DevTools) helps me reverse engineer websites to get inspiration. If a client wants its website to look better than a competitor's, I can easily do it. I know HTML5, CSS, and Javascript too well for somebody to try to keep its design away from my sight.
                 </mj-text>
             </mj-column>
             <mj-column>
@@ -153,7 +153,7 @@
                     Back-End Developer
                 </mj-text>
                 <mj-text mj-class="p-1">
-                    I know server administration and my favorite are IIS servers. I can also manage an Apache WebServer system. I actually use open-source tools like MySQL to manage my Databases. I code App Servers in PHP and sometimes with NodeJS. Wordpress Themes design is the reason I do more PHP than NodeJS.
+                    I know server administration, and my favorite is the IIS server. I can also manage an Apache WebServer system. I, at the moment, use open-source tools like MySQL to manage my Databases. I code App Servers in PHP and sometimes with NodeJS. WordPress Themes design is the reason I do more PHP than NodeJS.
                 </mj-text>
             </mj-column>
         </mj-section>

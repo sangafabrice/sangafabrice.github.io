@@ -45,7 +45,7 @@
                 display: inline-block;
                 text-decoration-style: none;
                 font-size: 12px;
-                color: #ffffff;
+                color: #FFFFFF;
                 height: 32px;
                 line-height: 32px;
                 border-radius: 32px;
@@ -60,7 +60,7 @@
             }
 
             .btn-2 {
-                border: 2px solid #FFFFFF !important;
+                border: 2px solid #FFFFFF;
             }
 
             .social {
@@ -83,6 +83,12 @@
         </mj-style>
     </mj-head>
     <mj-body background-color="#028482">
+        <!-- preheader clearfix -->
+        <mj-section>
+            <mj-raw>
+                <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
+            </mj-raw>
+        </mj-section>
         <!-- logo and navigation -->
         <mj-section>
             <mj-column>
@@ -95,6 +101,8 @@
             </mj-column>
         </mj-section>
         <!-- header -->
+        <!-- job title and profile statement -->
+        <!-- cta to download the cv or go to github profile -->
         <mj-section>
             <mj-column width="40%">
                 <mj-image />
@@ -111,7 +119,8 @@
                 </mj-text>
             </mj-column>
         </mj-section>
-         <!-- main -->
+        <!-- main -->
+        <!-- list of skills -->
         <mj-section>
             <mj-column>
                 <mj-spacer />
@@ -163,6 +172,7 @@
             </mj-column>
         </mj-section>
         <!-- footer -->
+        <!-- my digital signature -->
         <mj-section>
             <mj-column>
                 <mj-divider border-color="#303030" border-width="1px" />

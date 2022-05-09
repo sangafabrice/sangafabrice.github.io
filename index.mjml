@@ -127,7 +127,7 @@
                     Automation
                 </mj-text>
                 <mj-text mj-class="p-1">
-                    I am a power user, and I code most of my time in scripting languages that help automate tasks on a computer system. I have a preference for PowerShell Core which is cross-platform, but I have no trouble exiting the vim in the bash terminal. I use Linux as Windows Subsystem. Brief, PowerShell Remoting, and SSH have no secrets to me. 
+                    I am a power user, and I code most of my time in scripting languages that help automate tasks on a computer system. I have a preference for PowerShell Core which is cross-platform, but I have no trouble exiting the vim in the bash terminal. I use Linux as a Windows Subsystem. Brief, PowerShell Remoting, and SSH have no secrets to me. 
                 </mj-text>
             </mj-column>
             <mj-column>

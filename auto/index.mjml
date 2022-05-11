@@ -1,5 +1,9 @@
-<mjml>
+<mjml lang="en-US">
     <mj-head>
+        <mj-title>Fabrice Sanga Resume</mj-title>
+        <mj-raw>
+            <meta name="description" content="Fabrice Sanga's resume newsletter." />
+        </mj-raw>
         <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap" />
         <mj-attributes>
             <mj-section background-color="#222222" padding="0px" />
@@ -200,7 +204,7 @@
                     Bulaq Ad-Dakrour, Giza, Egypt
                 </mj-text>
                 <mj-text padding-top="0px" font-size="10px" font-weight="400" color="#B0B0B0" align="center">
-                    <a class="social">+20-1066084632</a>
+                    <a class="social" href="tel:+201066084632">+20-1066084632</a>
                 </mj-text>
                 <mj-spacer height="10px" />
             </mj-column>

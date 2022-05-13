@@ -37,6 +37,7 @@ Function Send-NewsLetter {
             Credential = $_;
             UseSsl = $true;
             Port = $SmtpPort;
+            WarningAction = 'SilentlyContinue';
         }
     } | 
     ForEach-Object { Send-MailMessage @_ }

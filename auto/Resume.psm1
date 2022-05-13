@@ -14,10 +14,10 @@ Function Set-NewsLetter {
 
 Function Send-NewsLetter {
     Param (
-        [Parameter(Mandatory=$true)]
+        [Parameter(Mandatory)]
         [Alias('To')]
         [string] $Receiver,
-        [Parameter(Mandatory=$true)]
+        [Parameter(Mandatory)]
         [Alias('Host')]
         [string] $SmtpServer,
         [Alias('Port')]

@@ -1,14 +1,25 @@
 $ModuleDir = $MyInvocation.MyCommand.Path -replace '\\[^\\]+$'
+$MJML = $(where.exe mjml 2> $Null) ? 'mjml':$(
+    "${Script:ModuleDir}\node_modules\.bin\mjml.ps1" |
+    ForEach-Object {
+        If (!(Test-Path $_)) {
+            Set-Location -Path $Script:ModuleDir
+            [void] (npm install mjml@latest --yes)
+            Set-Location -
+        }
+        $_
+    }
+)
 $Email = (Get-Item $ModuleDir).Parent.FullName + '\index.html'
 
 Function Set-NewsLetter {
     Set-Location -Path $Script:ModuleDir
     '.\index-no-comment.mjml' |
     ForEach-Object {
-    Get-Content .\index.mjml |
-    Where-Object { $_ -notlike '*<!--*-->*' } |
+        Get-Content .\index.mjml |
+        Where-Object { $_ -notlike '*<!--*-->*' } |
         Out-File $_
-        mjml $_ --config.minify true --output $Script:Email
+        Invoke-Expression "$MJML $_ --config.minify true --output ${Script:Email}"
         Remove-Item $_ -Force
     }
     Set-Location -
@@ -27,7 +38,7 @@ Function Send-NewsLetter {
         [Alias('Port')]
         [int] $SmtpPort = 587
     )
-
+    
     $UseDefault ? $(
         Remove-Variable SmtpServer
         Get-Content "${Script:ModuleDir}\secret.toml" |

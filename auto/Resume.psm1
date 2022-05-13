@@ -19,14 +19,42 @@ Function Send-NewsLetter {
         [Parameter(Mandatory)]
         [Alias('To')]
         [string] $Receiver,
-        [Parameter(Mandatory)]
+        [Parameter(Mandatory, ParameterSetName='UseCmdLine')]
         [Alias('Host')]
         [string] $SmtpServer,
+        [Parameter(Mandatory, ParameterSetName='UseDefault')]
+        [switch] $UseDefault,
         [Alias('Port')]
         [int] $SmtpPort = 587
     )
 
-    (Get-Credential) |
+    $UseDefault ? $(
+        Remove-Variable SmtpServer
+        Get-Content "${Script:ModuleDir}\secret.toml" |
+        ForEach-Object {
+            ,($_ -split '=') |
+            ForEach-Object {
+                @{
+                    Option = 'ReadOnly';
+                    Name = $_[0].Trim();
+                    Value = ($_[1] -replace '"').Trim();
+                    Force = $true;
+                }
+            } |
+            ForEach-Object { Set-Variable @_ }
+        }
+        [pscredential]::new(
+            $UserName,
+            (
+                @{
+                    String = $PassWord;
+                    AsPlainText = $true;
+                    Force = $true;
+                } | 
+                ForEach-Object { ConvertTo-SecureString @_ }
+            )
+        )
+    ):(Get-Credential) |
     ForEach-Object {
         @{
             To = $Receiver;

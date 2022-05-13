@@ -3,12 +3,14 @@ $Email = (Get-Item $ModuleDir).Parent.FullName + '\index.html'
 
 Function Set-NewsLetter {
     Set-Location -Path $Script:ModuleDir
-    $MjmlNoComment = '.\index-no-comment.mjml'
+    '.\index-no-comment.mjml' |
+    ForEach-Object {
     Get-Content .\index.mjml |
     Where-Object { $_ -notlike '*<!--*-->*' } |
-    Out-File $MjmlNoComment
-    mjml $MjmlNoComment --config.minify true --output $Script:Email
-    Remove-Item $MjmlNoComment -Force
+        Out-File $_
+        mjml $_ --config.minify true --output $Script:Email
+        Remove-Item $_ -Force
+    }
     Set-Location -
 }
 

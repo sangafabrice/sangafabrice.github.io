@@ -10,7 +10,7 @@
             <mj-class name="h-1" color="#B0B0B0" />
             <mj-class name="h-2" color="#028482" />
             <mj-class name="p-1" font-size="12px" padding-top="0px" />
-            <mj-image src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/279909776_166452925783562_8242125658078479_n.jpg?_nc_cat=108&ccb=1-6&_nc_sid=730e14&_nc_ohc=bB0Dq9Zxp_0AX-Oz7Be&_nc_ht=scontent.fcai19-4.fna&oh=00_AT_22acbAxPa-aqGJPfuUuxcHTNMVS7xv631z_WQnWZSJA&oe=627C12FE" alt="Fabrice Sanga Photo" border="18px solid #333333" border-radius="400px" />
+            <mj-image src="https://i.ibb.co/jgrQJWJ/main-photo.jpg" alt="Fabrice Sanga Photo" border="18px solid #333333" border-radius="400px" />
             <mj-spacer height="60px" />
             <mj-all color="#FFFFFF" font-size="14px" font-family="Poppins, Helvetica, sans-serif" line-height="18px" />
         </mj-attributes>

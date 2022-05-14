@@ -12,7 +12,7 @@ $MJML = $(where.exe mjml 2> $Null) ? 'mjml':$(
 )
 $Email = git worktree list |
 ForEach-Object {
-    if ($_ -match '(?<EmailDir>[A-Z]:(/[^/]*)+)\s+[a-z0-9]{7,} \[html-email\]') {
+    If ($_ -match '(?<EmailDir>[A-Z]:(/[^/]*)+)\s+[a-z0-9]{7,} \[html-email\]') {
         ($Matches.EmailDir.Trim() -replace '/','\') + '\index.html'
     }
 }

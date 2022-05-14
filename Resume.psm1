@@ -10,7 +10,12 @@ $MJML = $(where.exe mjml 2> $Null) ? 'mjml':$(
         $_
     }
 )
-$Email = (Get-Item $ModuleDir).Parent.FullName + '\index.html'
+$Email = git worktree list |
+ForEach-Object {
+    if ($_ -match '(?<EmailDir>[A-Z]:(/[^/]*)+)\s+[a-z0-9]{7,} \[html-email\]') {
+        ($Matches.EmailDir.Trim() -replace '/','\') + '\index.html'
+    }
+}
 
 Function Set-NewsLetter {
     Set-Location -Path $Script:ModuleDir
@@ -70,7 +75,7 @@ Function Send-NewsLetter {
         @{
             To = $Receiver;
             Subject = 'Fabrice Sanga Summary Statement';
-            Body = (Get-Content $Script:Email -Raw);
+            Body = (Get-Content $Script:Email -Raw -ErrorAction Stop);
             SmtpServer = $SmtpServer;
             From = 'Fabrice Sanga <' + $_.UserName + '>';
             BodyAsHtml = $true;

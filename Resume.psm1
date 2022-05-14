@@ -1,4 +1,5 @@
-$ModuleDir = $MyInvocation.MyCommand.Path -replace '\\[^\\]+$'
+$ModuleDir = Get-Item $MyInvocation.MyCommand.Path | 
+ForEach-Object { $_.PSParentPath.Substring($_.PSProvider.ToString().Length + 2) }
 $MJML = $(where.exe mjml 2> $Null) ? 'mjml':$(
     "${Script:ModuleDir}\node_modules\.bin\mjml.ps1" |
     ForEach-Object {
@@ -12,8 +13,8 @@ $MJML = $(where.exe mjml 2> $Null) ? 'mjml':$(
 )
 $Email = git worktree list |
 ForEach-Object {
-    If ($_ -match '(?<EmailDir>[A-Z]:(/[^/]*)+)\s+[a-z0-9]{7,} \[html-email\]') {
-        ($Matches.EmailDir.Trim() -replace '/','\') + '\index.html'
+    If ($_.EndsWith('[html-email]', 1)) {
+        ($_ -replace '\s+[a-z0-9]{7,} \[html-email\]$').Trim() + '\index.html'
     }
 }
 

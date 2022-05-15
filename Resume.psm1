@@ -1,5 +1,4 @@
-$ModuleDir = Get-Item $MyInvocation.MyCommand.Path | 
-ForEach-Object { $_.PSParentPath.Substring($_.PSProvider.ToString().Length + 2) }
+$ModuleDir = (Get-Item $MyInvocation.MyCommand.Path).DirectoryName
 $MJML = $(where.exe mjml 2> $Null) ? 'mjml':$(
     "${Script:ModuleDir}\node_modules\.bin\mjml.ps1" |
     ForEach-Object {

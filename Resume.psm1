@@ -3,7 +3,7 @@ $MJML = $(where.exe mjml 2> $Null) ? 'mjml':$(
     "$ModuleDir\node_modules\.bin\mjml.ps1" |
     ForEach-Object {
         If (!(Test-Path $_)) {
-            Set-Location -Path $ModuleDir
+            Set-Location $ModuleDir
             [void] (npm install mjml@latest --yes)
             Set-Location -
         }
@@ -18,7 +18,7 @@ ForEach-Object {
 }
 
 Function Set-NewsLetter {
-    Set-Location -Path $Script:ModuleDir
+    Set-Location $Script:ModuleDir
     '.\index-no-comment.mjml' |
     ForEach-Object {
         Get-Content .\index.mjml |

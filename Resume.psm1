@@ -1,9 +1,9 @@
 $ModuleDir = (Get-Item $MyInvocation.MyCommand.Path).DirectoryName
 $MJML = $(where.exe mjml 2> $Null) ? 'mjml':$(
-    "${Script:ModuleDir}\node_modules\.bin\mjml.ps1" |
+    "$ModuleDir\node_modules\.bin\mjml.ps1" |
     ForEach-Object {
         If (!(Test-Path $_)) {
-            Set-Location -Path $Script:ModuleDir
+            Set-Location -Path $ModuleDir
             [void] (npm install mjml@latest --yes)
             Set-Location -
         }

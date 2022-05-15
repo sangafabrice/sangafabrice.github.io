@@ -10,8 +10,11 @@ $MJML = $(where.exe mjml 2> $Null) ? 'mjml':$(
         $_
     }
 )
-$Email = git worktree list |
-ForEach-Object {
+$Email = $(
+    Set-Location $ModuleDir
+    git worktree list
+    Set-Location -
+) | ForEach-Object {
     If ($_.EndsWith('[html-email]', 1)) {
         ($_ -replace '\s+[a-z0-9]{7,} \[html-email\]$').Trim() + '\index.html'
     }

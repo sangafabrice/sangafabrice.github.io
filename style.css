@@ -208,13 +208,19 @@ button {
     }
 
     @media only screen and (max-height: 700px) {
+        #toggle-header + header #toggle {
+            top: 15px;
+            position: fixed;
+            transition: top .3s;
+        }
+
         #toggle-header:checked + header {
             height: 90%;
         }
 
         #toggle-header:checked + header #toggle {
-            bottom: 13%;
-            position: fixed;
+            top: 80%;
+            transition: top .3s;
         }
     }
 }

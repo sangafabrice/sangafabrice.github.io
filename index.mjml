@@ -85,6 +85,19 @@
                 border-bottom: 2px solid #303030;
             }
         </mj-style>
+        <mj-style>
+            ::-webkit-scrollbar {
+                width: 3px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #222222;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #028482;
+            }
+        </mj-style>
     </mj-head>
     <mj-body background-color="#028482">
         <!-- preheader clearfix -->

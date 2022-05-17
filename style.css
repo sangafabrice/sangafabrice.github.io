@@ -170,6 +170,10 @@ input:focus {
         transition: height .3s;
     }
 
+    iframe {
+        height: calc(100% - 40px);
+    }
+
     #header {
         opacity: 0;
     }
@@ -191,6 +195,11 @@ input:focus {
     #toggle-header:checked + header {
         height: 70%;
         transition: height .3s;
+    }
+
+    #toggle-header:checked ~ section > iframe {
+        height: 30%;
+        transition: height 0s linear 1s;
     }
 
     #toggle-header:checked + header #header {

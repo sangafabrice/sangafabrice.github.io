@@ -71,10 +71,14 @@ form > * * {
     display: block;
 }
 
-#header > *,
-#toggle {
+#header > * {
     width: calc(100% - 40px);
     margin: 0 20px;
+}
+
+#toggle {
+    width: 40px;
+    margin: 0 calc(50% - 20px);
 }
 
 #header > label {

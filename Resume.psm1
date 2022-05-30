@@ -1,9 +1,8 @@
-$ModuleDir = (Get-Item $MyInvocation.MyCommand.Path).DirectoryName
 $MJML = $(where.exe mjml 2> $Null) ? 'mjml':$(
-    "$ModuleDir\node_modules\.bin\mjml.ps1" |
+    "$PSScriptRoot\node_modules\.bin\mjml.ps1" |
     ForEach-Object {
         If (!(Test-Path $_)) {
-            Set-Location $ModuleDir
+            Set-Location $PSScriptRoot
             [void] (npm install mjml@latest --yes)
             Set-Location -
         }
@@ -11,7 +10,7 @@ $MJML = $(where.exe mjml 2> $Null) ? 'mjml':$(
     }
 )
 $Email = $(
-    Set-Location $ModuleDir
+    Set-Location $PSScriptRoot
     git worktree list
     Set-Location -
 ) | ForEach-Object {
@@ -21,7 +20,7 @@ $Email = $(
 }
 
 Function Set-NewsLetter {
-    Set-Location $Script:ModuleDir
+    Set-Location $PSScriptRoot
     '.\index-no-comment.mjml' |
     ForEach-Object {
         Get-Content .\index.mjml |
@@ -49,7 +48,7 @@ Function Send-NewsLetter {
     
     $UseDefault ? $(
         Remove-Variable SmtpServer
-        Get-Content "${Script:ModuleDir}\secret.toml" |
+        Get-Content "$PSScriptRoot\secret.toml" |
         ForEach-Object {
             ,($_ -split '=') |
             ForEach-Object {

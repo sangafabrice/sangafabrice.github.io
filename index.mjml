@@ -1,0 +1,226 @@
+<mjml lang="en-US">
+    <mj-head>
+        <mj-title>Fabrice Sanga Resume</mj-title>
+        <mj-raw>
+            <meta name="description" content="Fabrice Sanga's resume newsletter." />
+        </mj-raw>
+        <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap" />
+        <mj-attributes>
+            <mj-section background-color="#222222" padding="0px" />
+            <mj-class name="h-1" color="#B0B0B0" />
+            <mj-class name="h-2" color="#028482" />
+            <mj-class name="p-1" font-size="12px" padding-top="0px" />
+            <mj-image src="https://i.ibb.co/jgrQJWJ/main-photo.jpg" alt="Fabrice Sanga Photo" border="18px solid #333333" border-radius="400px" />
+            <mj-spacer height="60px" />
+            <mj-all color="#FFFFFF" font-size="14px" font-family="Poppins, Helvetica, sans-serif" line-height="18px" />
+        </mj-attributes>
+        <mj-style inline="inline">
+            .logo {
+                display: inline-block;
+                height: 32px;
+                width: 32px;
+                border-radius: 32px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: 900;
+                background-color: #028482;
+                line-height: 32px;
+            }
+
+            .logo-first {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 32px;
+            }
+
+            .logo-last {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+            }
+
+            .nav-link {
+                line-height: 32px;
+                height: 32px;
+            } 
+
+            .btn-1,
+            .btn-2 {
+                display: inline-block;
+                text-decoration-style: none;
+                font-size: 12px;
+                color: #FFFFFF;
+                height: 32px;
+                line-height: 32px;
+                border-radius: 32px;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-top: 5px;
+                text-decoration: none;
+            }
+
+            .btn-1 {
+                border: 2px solid #028482;
+            }
+
+            .btn-2 {
+                border: 2px solid #FFFFFF;
+            }
+
+            .social {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .h1-u,
+            .h2-u {
+                padding-bottom: 5px;
+            }
+
+            .h1-u {
+                border-bottom: 2px solid #028482;
+            }
+
+            .h2-u {
+                border-bottom: 2px solid #303030;
+            }
+        </mj-style>
+        <mj-style>
+            ::-webkit-scrollbar {
+                width: 3px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #222222;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #028482;
+            }
+        </mj-style>
+    </mj-head>
+    <mj-body background-color="#028482">
+        <!-- preheader clearfix -->
+        <mj-section>
+            <mj-raw>
+                <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
+            </mj-raw>
+        </mj-section>
+        <!-- logo and navigation -->
+        <mj-section>
+            <mj-column>
+                <mj-text>
+                    <mj-raw>
+                        <span class="logo">F</span> <span class="logo-first">Fabrice</span> <span class="logo-last">Sanga</span>
+                    </mj-raw>
+                </mj-text>
+                <mj-spacer />
+            </mj-column>
+        </mj-section>
+        <!-- header -->
+        <!-- job title and profile statement -->
+        <!-- cta to download the cv or go to github profile -->
+        <mj-section>
+            <mj-column width="40%">
+                <mj-image />
+            </mj-column>
+            <mj-column width="60%">
+                <mj-text mj-class="h-1">
+                    Software Engineer
+                </mj-text>
+                <mj-text>
+                    Career shift from a high-profile technical support trainer whose task was to help recruits have a clear understanding of Networking and mentor them into solving related problems at the residential level, to a motivated software engineer aiming to develop innovative enterprise-level solutions.
+                </mj-text>
+                <mj-text css-class="btn">
+                    <a class="btn-1" href="https://drive.google.com/uc?export=view&id=1aVGbghTwZn3V7sOzCn22mLXrdR4UVmZd">DOWNLOAD CV</a>&nbsp;&nbsp;<a class="btn-2" href="https://github.com/sangafabrice">GITHUB</a>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <!-- main -->
+        <!-- list of skills -->
+        <mj-section>
+            <mj-column>
+                <mj-spacer />
+                <mj-text font-weight="900" font-size="20px">
+                    <span class="h1-u">Wh</span><span class="h2-u">at I Can Do</span>
+                </mj-text>
+                <mj-spacer height="20px" />
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column>
+                <mj-text mj-class="h-1">
+                    Automation
+                </mj-text>
+                <mj-text mj-class="p-1">
+                    I am a power user, and I code most of my time in scripting languages that help automate tasks on a computer system. I have a preference for PowerShell Core which is cross-platform, but I have no trouble exiting the vim in the bash terminal. I use Linux as a Windows Subsystem. Brief, PowerShell Remoting, and SSH have no secrets to me. 
+                </mj-text>
+            </mj-column>
+            <mj-column>
+                <mj-text mj-class="h-1">
+                    Problem-Solving
+                </mj-text>
+                <mj-text mj-class="p-1">
+                    I prefer problem-solving to coding because I mastered programming constructs and algorithms in a way that makes me capable of learning a new programming language in a few days. Nowadays, I code most of my time in Scripting Languages (Javascript, PHP, Python) because they are fast to test and syntactically attractive. I code in Java too.
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column>
+                <mj-text mj-class="h-1">
+                    Front-End Developer
+                </mj-text>
+                <mj-text mj-class="p-1">
+                    I am an artist who does not know how to draw, and my knowledge of troubleshooting tools (Fiddler and DevTools) helps me reverse engineer websites to get inspiration. If a client wants its website to look better than a competitor's, I can easily do it. I know HTML5, CSS, and Javascript too well for somebody to try to keep its design away from my sight.
+                </mj-text>
+            </mj-column>
+            <mj-column>
+                <mj-text mj-class="h-1">
+                    Back-End Developer
+                </mj-text>
+                <mj-text mj-class="p-1">
+                    I know server administration, and my favorite is the IIS server. I can also manage an Apache WebServer system. I, at the moment, use open-source tools like MySQL to manage my Databases. I code App Servers in PHP and sometimes with NodeJS. WordPress Themes design is the reason I do more PHP than NodeJS.
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column>
+                <mj-spacer />
+            </mj-column>
+        </mj-section>
+        <!-- footer -->
+        <!-- my digital signature -->
+        <mj-section>
+            <mj-column>
+                <mj-divider border-color="#303030" border-width="1px" />
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column>
+                <mj-text padding-bottom="0px" color="#B0B0B0" font-weight="600">
+                    Fabrice Sanga
+                </mj-text>
+                <mj-text padding-top="0px" font-size="12px" font-weight="400" color="#B0B0B0">
+                    Software Engineer | System Admin
+                </mj-text>
+            </mj-column>
+            <mj-column>
+                <mj-text mj-class="h-2" font-size="12px">
+                    <a class="social" href="https://www.linkedin.com/in/sanga-fabrice">LinkedIn</a> &middot; <a class="social" href="https://twitter.com/fabrice_sanga">Twitter</a> &middot; <a class="social" href="https://github.com/sangafabrice">GitHub</a>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column>
+                <mj-spacer height="20px" />
+                <mj-text padding-top="0px" padding-bottom="0px" font-size="10px" font-weight="400" color="#B0B0B0" align="center">
+                    Bulaq Ad-Dakrour, Giza, Egypt
+                </mj-text>
+                <mj-text padding-top="0px" font-size="10px" font-weight="400" color="#B0B0B0" align="center">
+                    <a class="social" href="tel:+201066084632">+20-1066084632</a>
+                </mj-text>
+                <mj-spacer height="10px" />
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>

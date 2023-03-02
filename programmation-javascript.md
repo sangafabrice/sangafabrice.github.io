@@ -1,5 +1,5 @@
-<!-- ## :black_square_button: **Activité 1** -->
-## :white_check_mark: **Activité 1**
+<!-- ## ✅ **Activité 1** -->
+## 🔲 **Activité 1**
 
 |Coder en **Javascript** un simple programme en utilisant la boucle de lecture-évaluation-impression (Read-Eval-Print Loop, REPL) fournit par un navigateur web.|
 |:---|
@@ -28,8 +28,8 @@ Javascript est un langage de programmation de **haut niveau** parce qu'il est pl
 ---
 <br>
 
-<!-- ## :black_square_button: **Activité 2** -->
-## :white_check_mark: **Activité 2**
+## ✅ **Activité 2**
+<!-- ## 🔲 **Activité 2** -->
 
 |Installer les outils TIC constamment utilisés par les développeurs.|
 |:---|
